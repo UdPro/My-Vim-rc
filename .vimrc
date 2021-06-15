@@ -5,6 +5,15 @@ set incsearch
 set noswapfile
 set scrolloff=8
 set signcolumn=yes
+set nowrap
+
+set noexpandtab
+set copyindent
+set preserveindent
+set softtabstop=0
+set shiftwidth=4
+set tabstop=4
+
 
 call plug#begin('~/.vim/plugged')
 
@@ -28,7 +37,10 @@ let g:gruvbox_transparent_bg = '1'
 let g:airline_theme = 'codedark'
 
 " Shortcuts
-
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 "NerdTree
 "autocmd VimEnter * NERDTree
 nnoremap <C-n> :NERDTree<CR>
